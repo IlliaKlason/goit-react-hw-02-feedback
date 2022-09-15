@@ -54,7 +54,7 @@ export class App extends Component {
             />
           </Section>
           <Section title="Statistics">
-            {total === 0 ? (
+            {!total ? (
               <Notification message="There is no feedback" />
             ) : (
               <Statistics
